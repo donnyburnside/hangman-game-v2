@@ -1,0 +1,44 @@
+{
+  "name": "hangman",
+  "description": "Hangman game in JavaScript",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "webpack --config ./scripts/webpack.production.js --progress",
+    "serve": "webpack-dev-server --config ./scripts/webpack.development.js",
+    "clean": "rimraf ./dist"
+  },
+  "keywords": [
+    "ecmascript",
+    "game",
+    "hangman",
+    "javascript"
+  ],
+  "dependencies": {
+    "page": "^1.7.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.29.0",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^6.0.6",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0",
+    "webpack-merge": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donnyburnside/hangman.git"
+  },
+  "author": "Donny Burnside <inbox@donnyburnside.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/donnyburnside/hangman/issues"
+  },
+  "homepage": "https://github.com/donnyburnside/hangman#readme"
+}

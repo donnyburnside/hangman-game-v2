@@ -1,0 +1,41 @@
+$animation-durations: (0.25s, 0.5s, 0.75s, 1s, 1.25s, 1.5s, 1.75s, 2s);
+
+[data-animation] {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+
+  &[data-animation="fadeInUp"] {
+    animation-name: fadeInUp;
+  }
+
+  @each $duration in $animation-durations {
+    &[data-animation-duration="#{$duration}"] {
+      animation-duration: $duration;
+    }
+    &[data-animation-delay="#{$duration}"] {
+      animation-delay: $duration;
+    }
+  }
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

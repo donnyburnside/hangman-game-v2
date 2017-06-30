@@ -1,0 +1,13 @@
+{
+  "title": "Hangman",
+  "description": "A JavaScript game by Donny Burnside",
+  "element": ".app",
+  "words": [
+    "antidisestablishmentarianism",
+    "bikes",
+    "cheeseburgers",
+    "crackerjack",
+    "fusion",
+    "mammalian"
+  ]
+}
